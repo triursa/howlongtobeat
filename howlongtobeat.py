@@ -43,7 +43,7 @@ def get_hltb_stats(game_title):
         return game_title, 'N/A', 'N/A', 'N/A'
 
 # Read the input text file
-input_file = 'games.txt'
+input_file = 'dedupe_games.txt'
 output_file = 'games_stats.txt'
 games = []
 with open(input_file, 'r') as f:

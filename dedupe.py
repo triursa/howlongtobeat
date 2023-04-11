@@ -1,5 +1,5 @@
 # Read the input text file
-input_file = 'games.txt'
+input_file = 'games_title_case.txt'
 output_file = 'dedupe_games.txt'
 games = []
 with open(input_file, 'r') as f:

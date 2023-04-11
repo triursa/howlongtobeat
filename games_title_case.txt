@@ -23,6 +23,7 @@ Darq **
 Eternal Darkness Gamecube Game **
 Spiritfarer **
 Journey To the Savage Planet *
+Eternal Darkness Gamecube Game **
 Disco Elyssum *
 Prison Architect
 Rebel Galaxy Outlaw
@@ -124,6 +125,7 @@ Eternal Castle
 Resident Evil 2 Remake
 My Time At Portia
 Lucious
+Deus Ex
 Eastshade
 Insomnia the Ark
 Tick Tock a Tale For Two
@@ -135,6 +137,7 @@ Syndicate
 Spacehulk
 Prey 2
 Phantasy Star Online 2
+Syndicate
 Baldurs Gate
 Anna
 Sly Cooper
@@ -186,6 +189,7 @@ Phoenix Point
 Ape Out
 Praey For the Gods
 Star Wars Jedi Fallen Order
+Observer
 Observation
 Wide Ocean Big Jacket
 Terminator Resistance
@@ -207,6 +211,7 @@ Observer Remaster Next Gen **
 Lords Of the Fallen **
 Days Gone *
 Cloud Punk
+Journey To the Savage Planet *
 Darkest Dungeon Easy Mod?
 Wildfire
 Tales From Off Peak City
