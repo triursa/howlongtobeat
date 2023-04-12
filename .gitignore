@@ -2,3 +2,4 @@ __pycache__
 *.pyc
 games.csv
 output/games.csv
+output/needs_fix.txt
