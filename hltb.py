@@ -18,6 +18,7 @@ def dedupe(lower_games):
         if game not in games:  # Remove duplicates
             games.append(game)
 
+    print(games)
     # Return the deduplicated games list
     return games
 
@@ -31,12 +32,20 @@ def createcsv(games):
 def howlongtobeat(games):
     
     with open(output_file, 'w') as f:
-            f.write("title,game_name,main_story,main_extra,completionist,\n")
+            f.write("title,game_name,game_alias,game_image_url,game_web_link,review_score,profile_dev,profile_platforms,release_world,main_story,main_extra,completionist,all_styles,\n")
     
+    #games = ["Super Mario Bros. 3"]
     for game in games:
-        results_list = HowLongToBeat().search(f'{game}')
-        results = f'{results_list[0].game_name}, {results_list[0].main_story}'
-    print(results)
+        results_list = HowLongToBeat().search(f'{game}', similarity_case_sensitive=False)
+        if results_list is not None and len(results_list) > 0: 
+            results = f'"{game}","{results_list[0].game_name}","{results_list[0].game_alias}","{results_list[0].game_image_url}","{results_list[0].game_web_link}","{results_list[0].review_score}","{results_list[0].profile_dev}","{results_list[0].profile_platforms}","{results_list[0].release_world}","{results_list[0].main_story}","{results_list[0].main_extra}","{results_list[0].completionist}","{results_list[0].all_styles}",\n'
+            print(results)
+            with open(output_file, 'a') as f:
+                f.write(results)
+        else:
+            print(f'{game},,,,,,,,,,,,,')
+            with open (output_file, 'a') as f:
+                f.write(f'"{game}",,,,,,,,,,,,,\n')
     
     return results
    
@@ -44,7 +53,7 @@ def howlongtobeat(games):
 
 # Call the functions with appropriate arguments
 lower_games = []
-lower_games = createlist(lower_games)
+lower_games = createlist()
 games = dedupe(lower_games)
 #createcsv(games)
 howlongtobeat(games)
