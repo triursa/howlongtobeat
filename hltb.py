@@ -48,8 +48,6 @@ def howlongtobeat(games):
                 f.write(f'"{game}",,,,,,,,,,,,,\n')
     
     return results
-   
-    
 
 # Call the functions with appropriate arguments
 lower_games = []
