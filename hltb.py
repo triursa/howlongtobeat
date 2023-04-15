@@ -18,7 +18,7 @@ def dedupe(lower_games):
         if game not in games:  # Remove duplicates
             games.append(game)
 
-    print(games)
+    # print(games)
     # Return the deduplicated games list
     return games
 
